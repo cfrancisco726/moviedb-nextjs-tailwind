@@ -6,6 +6,7 @@ import {
   SearchIcon,
   UserIcon,
 } from "@heroicons/react/outline";
+import Link from "next/link";
 import Image from "next/image";
 import HeaderItem from "./HeaderItem";
 
@@ -13,7 +14,11 @@ function Header() {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <div className="flex flex-grow justify-evenly max-w-2xl">
-        <HeaderItem title="HOME" Icon={HomeIcon} />
+        <Link href="/">
+          <a>
+            <HeaderItem title="HOME" Icon={HomeIcon} />
+          </a>
+        </Link>
         <HeaderItem title="TRENDING" Icon={BadgeCheckIcon} />
         <HeaderItem title="VERIFIED" Icon={CollectionIcon} />
         <HeaderItem title="COLLECTIONS" Icon={LightningBoltIcon} />

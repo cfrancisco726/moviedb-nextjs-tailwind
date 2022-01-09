@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
+import Content from "./Content";
 
 function Thumbnail({ result }) {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
-
+  const router = useRouter();
+  // console.log("id", result);
+  // console.log("result", result);
   return (
     <div className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
       <Image
@@ -14,6 +18,8 @@ function Thumbnail({ result }) {
         }
         height={1080}
         width={1920}
+        onClick={() => router.push(`/content/${result.id}`)}
+        alt="image"
       />
       <div className="p-2 group cursor-porinter transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
         <p className="truncate max-w-md">{result.overview}</p>
