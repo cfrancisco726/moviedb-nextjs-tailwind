@@ -10,7 +10,7 @@ export default function ContentId({ content }) {
 
   return (
     <div>
-      <div className="h-70v w-70v p-10 aspect-w-16 aspect-h-9 flex justify-center my-5">
+      <div className="h-80v p-10 flex justify-center ">
         <iframe
           src={youtubeLink}
           frameBorder="0"
@@ -24,7 +24,6 @@ export default function ContentId({ content }) {
 
 export async function getServerSideProps(context) {
   const { params, req, res, query } = context;
-  console.log("params", params);
 
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/${params.contentId}/videos?api_key=${API_KEY}&language=en-U`
@@ -42,7 +41,6 @@ export async function getServerSideProps(context) {
     };
   }
   const data = await response.json();
-  console.log("data", data);
 
   return {
     props: { content: data },
