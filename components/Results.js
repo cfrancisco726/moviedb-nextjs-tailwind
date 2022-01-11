@@ -9,7 +9,6 @@ function Results({ results }) {
         {results.map((result) => (
           <Thumbnail key={result.id} result={result} />
         ))}
-        <h1>thumbnail</h1>
       </div>
     </div>
   );

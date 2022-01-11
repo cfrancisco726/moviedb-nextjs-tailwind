@@ -12,20 +12,28 @@ import HeaderItem from "./HeaderItem";
 
 function Header() {
   return (
-    <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
-      <div className="flex flex-grow justify-evenly max-w-2xl">
-        <Link href="/">
+    <header className="flex flex-col sm:flex-row m-10 sm:m-5 justify-between items-center h-auto">
+      <div>
+        <Link href="/?genre=fetchTrending">
+          <a>
+            <h1 className="object-contain text-4xl p-5 font-Oswald text-logogreen">
+              MOVIE TRAILERS
+            </h1>
+          </a>
+        </Link>
+      </div>
+      <div className="flex  justify-evenly max-w-2xl">
+        <Link href="/?genre=fetchTrending">
           <a>
             <HeaderItem title="HOME" Icon={HomeIcon} />
           </a>
         </Link>
-        <HeaderItem title="TRENDING" Icon={BadgeCheckIcon} />
-        <HeaderItem title="VERIFIED" Icon={CollectionIcon} />
-        <HeaderItem title="COLLECTIONS" Icon={LightningBoltIcon} />
-        <HeaderItem title="SEARCH" Icon={SearchIcon} />
-        <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+        <Link href="">
+          <a>
+            <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+          </a>
+        </Link>
       </div>
-      <h1 className="object-contain">Video Streamer LOGO</h1>
     </header>
   );
 }
