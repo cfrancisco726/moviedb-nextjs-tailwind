@@ -16,9 +16,9 @@ export default function ContentId({ content }) {
       </div>
     );
   } else {
-    let youtubeKey = content.results[1].key;
+    let youtubeKey = content.results[0].key;
 
-    let youtubeName = content.results[1].name;
+    let youtubeName = content.results[0].name;
     let youtubeLink = `https://www.youtube.com/embed/${youtubeKey}`;
     return (
       <div>

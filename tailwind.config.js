@@ -16,6 +16,11 @@ module.exports = {
       colors: {
         logogreen: "#66ffcc",
       },
+
+      textColors: {
+        logogreen: "#66ffcc",
+      },
+
       height: {
         "10v": "10vh",
         "20v": "20vh",
@@ -43,7 +48,7 @@ module.exports = {
     },
   },
   variants: {
-    text: ["active"],
+    textColors: ["responsive", "hover", "focus", "active", "group-hover"],
   },
   plugins: [require("tailwind-scrollbar-hide", "@tailwindcss/aspect-ratio")],
 };
