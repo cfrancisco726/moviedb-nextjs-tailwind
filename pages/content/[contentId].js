@@ -12,7 +12,7 @@ export default function ContentId({ content }) {
   if (content.results[0] == null) {
     return (
       <div className="flex justify-center m-20 text-2xl">
-        <h1>Video not available</h1>
+        <h1>Trailer not available</h1>
       </div>
     );
   } else {

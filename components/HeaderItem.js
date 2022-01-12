@@ -1,7 +1,7 @@
 function HeaderItem({ Icon, title }) {
   return (
-    <div className="flex flex-col py-8 items-center cursor-pointer group w-12 sm:w-20 hover:text-white ">
-      <Icon className="h-12 mb-1 group-hover:animate-bounce" />
+    <div className="flex flex-col pt-10  items-center cursor-pointer group w-12 sm:w-20 hover:text-white ">
+      <Icon className="h-8 mb-1 group-hover:animate-bounce" />
       <p className="opacity-0 group-hover:opacity-100 tracking-widest">
         {title}
       </p>
