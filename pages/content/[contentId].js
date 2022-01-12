@@ -4,22 +4,35 @@ import { useRouter } from "next/router";
 import Content from "../../components/Content";
 
 export default function ContentId({ content }) {
-  const youtubeKey = content.results[0].key;
-  const youtubeName = content.results[0].name;
-  const youtubeLink = `https://www.youtube.com/embed/${youtubeKey}`;
+  let youtubeKey;
+  let youtubeName;
+  let youtubeLink;
+  console.log("content", content);
 
-  return (
-    <div>
-      <div className="h-80v p-10 flex justify-center ">
-        <iframe
-          src={youtubeLink}
-          frameBorder="0"
-          height="100%"
-          width="100%"
-        ></iframe>
+  if (content.results[0] == null) {
+    return (
+      <div className="flex justify-center m-20 text-2xl">
+        <h1>Video not available</h1>
       </div>
-    </div>
-  );
+    );
+  } else {
+    let youtubeKey = content.results[1].key;
+
+    let youtubeName = content.results[1].name;
+    let youtubeLink = `https://www.youtube.com/embed/${youtubeKey}`;
+    return (
+      <div>
+        <div className="h-80v p-10 flex justify-center ">
+          <iframe
+            src={youtubeLink}
+            frameBorder="0"
+            height="100%"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+    );
+  }
 }
 
 export async function getServerSideProps(context) {

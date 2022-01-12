@@ -22,7 +22,7 @@ function Header() {
           </a>
         </Link>
       </div>
-      <div className="flex  justify-evenly max-w-2xl px-2">
+      <div className="flex  justify-evenly max-w-2xl">
         <Link href="/?genre=fetchTrending">
           <a>
             <HeaderItem title="HOME" Icon={HomeIcon} />
