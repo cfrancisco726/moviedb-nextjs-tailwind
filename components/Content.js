@@ -4,7 +4,6 @@ const Content = ({ content }) => {
   let youtubeKey;
   let youtubeName;
   let youtubeLink;
-  console.log("content", content);
 
   if (content.results[0] == null) {
     return (
