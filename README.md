@@ -22,7 +22,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Landing Page
 
-![Example screenshot](./images/movidedb.png)
+![Example screenshot](./images/moviedb.png)
 
 ## Getting Started
 
