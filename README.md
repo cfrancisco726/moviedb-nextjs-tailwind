@@ -7,8 +7,6 @@ Live demo [_here_](https://moviedb-nextjs-tailwind.vercel.app/)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- React
-- NextJS
 - TailwindCSS
 - TMDB API
 - Youtube API
@@ -24,7 +22,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Landing Page
 
-![Example screenshot](./src/images/movidedb.png)
+![Example screenshot](./images/movidedb.png)
 
 ## Getting Started
 
