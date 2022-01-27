@@ -1,4 +1,4 @@
-# Portfolio Website
+# Movie Trailer Website
 
 Responsive server side rendered website displaying movie trailers sorted by category.
 Live demo [_here_](https://moviedb-nextjs-tailwind.vercel.app/)
